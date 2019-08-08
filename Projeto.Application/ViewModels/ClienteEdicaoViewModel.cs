@@ -16,7 +16,7 @@ namespace Projeto.Application.ViewModels
         }
 
         [Required(ErrorMessage = "Por favor, informe o nome.")]
-        public int Nome
+        public string Nome
         {
             get;
             set;

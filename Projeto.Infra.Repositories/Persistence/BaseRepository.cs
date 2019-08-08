@@ -7,6 +7,7 @@ using Projeto.Domain.Clientes.Infra.Repositories;
 using Projeto.Infra.Repositories.Context;
 using System.Data.Entity;
 
+
 namespace Projeto.Infra.Repositories.Persistence
 {
     public class BaseRepository<T> : IBaseRepository<T>

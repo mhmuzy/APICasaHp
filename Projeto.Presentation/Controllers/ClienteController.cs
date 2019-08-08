@@ -6,7 +6,8 @@ using System.Net.Http;
 using System.Web.Http;
 using Projeto.Application.ApplicationServices.Contracts;
 using Projeto.Application.ViewModels;
-
+using System.Data;
+using System.Data.SqlClient; 
 
 namespace Projeto.Presentation.Controllers
 {

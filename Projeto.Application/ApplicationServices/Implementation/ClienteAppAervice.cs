@@ -22,7 +22,18 @@ namespace Projeto.Application.ApplicationServices.Implementation
 
         public void Alterar(ClienteEdicaoViewModel model)
         {
-            throw new NotImplementedException();
+            Cliente c = new Cliente();
+            c.Endereco = new Endereco();
+
+            c.IdCliente = model.IdCliente;
+            c.Nome = model.Nome;
+            c.Email = model.Email;
+            c.DataNascimento = DateTime.Now;
+            c.Endereco.Logradouro = model.Cidade;
+            c.Endereco.Estado = model.Estado;
+            c.Endereco.Cep = model.Cep;
+
+            doamin.Atualizar(c);
         }
 
         public void Cadastrar(ClienteCadastroViewModel model)
@@ -40,12 +51,27 @@ namespace Projeto.Application.ApplicationServices.Implementation
             doamin.Cadastrar(c); //gravando..
         }
 
-        public List<ClienteConsultaViewModel> Consultar()
+        public List<Cliente> Consultar()
+        {
+            List<Cliente> model = doamin.ConsultarTodos();
+
+            
+            return model;
+        }
+
+        public Cliente ConsultarPorId(int id)
+        {
+            Cliente model = doamin.ConsultarPorId(id);
+
+            return model;
+        }
+
+        List<ClienteConsultaViewModel> IAppServiceCliente.Consultar()
         {
             throw new NotImplementedException();
         }
 
-        public List<ClienteConsultaViewModel> ConsultarPorId(int id)
+        List<ClienteConsultaViewModel> IAppServiceCliente.ConsultarPorId(int id)
         {
             throw new NotImplementedException();
         }

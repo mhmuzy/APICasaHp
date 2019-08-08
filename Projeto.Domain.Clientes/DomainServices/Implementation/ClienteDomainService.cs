@@ -55,6 +55,11 @@ namespace Projeto.Domain.Clientes.DomainServices.Implementation
             return repository.FindAll();
         }
 
+        public List<Cliente> ConsultarTodos()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Exluir(Cliente c)
         {
             repository.Delete(c);

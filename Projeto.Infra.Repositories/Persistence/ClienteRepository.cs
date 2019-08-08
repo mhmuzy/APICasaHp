@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Projeto.Domain.Clientes.Entities;
 using Projeto.Domain.Clientes.Infra.Repositories;
 using Projeto.Infra.Repositories.Context;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Projeto.Infra.Repositories.Persistence
 {

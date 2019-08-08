@@ -15,7 +15,7 @@ namespace Projeto.Domain.Clientes.DomainServices.Contarcts
 
         void Exluir(Cliente c);
 
-        List<Cliente> ConsultarTodos(Cliente c);
+        List<Cliente> ConsultarTodos();
 
         Cliente ConsultarPorId(int idCliente);
 
