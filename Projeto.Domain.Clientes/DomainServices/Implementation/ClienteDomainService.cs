@@ -7,6 +7,8 @@ using Projeto.Domain.Clientes.Entities;
 using Projeto.Domain.Clientes.DomainServices.Contarcts;
 using Projeto.Domain.Clientes.Infra.Repositories;
 using Projeto.Domain.Clientes.Infra.Messages;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Projeto.Domain.Clientes.DomainServices.Implementation
 {
