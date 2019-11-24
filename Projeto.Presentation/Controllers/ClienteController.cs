@@ -15,7 +15,10 @@ namespace Projeto.Presentation.Controllers
     public class ClienteController : ApiController
     {
         private IAppServiceCliente appService; //atributo
-
+        /// <summary>
+        /// Script 2
+        /// </summary>
+        /// <param name="appService"></param>
         //construtor para injeção de dependência..
         public ClienteController(IAppServiceCliente appService)
         {
