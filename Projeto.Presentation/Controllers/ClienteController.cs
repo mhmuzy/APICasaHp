@@ -14,6 +14,9 @@ namespace Projeto.Presentation.Controllers
     [RoutePrefix("api/cliente")]
     public class ClienteController : ApiController
     {
+        /// <summary>
+        /// Script da Parte Final
+        /// </summary>
         private IAppServiceCliente appService; //atributo
 
         //construtor para injeção de dependência..
